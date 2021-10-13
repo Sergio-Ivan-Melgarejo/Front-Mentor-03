@@ -3,7 +3,6 @@
 font-family: 'Lexend Deca', sans-serif; */
 
 :root{
-
     /* ### Primary */
     --Very-dark-blue: hsl(233, 47%, 7%);  /*-(main-background) */
     --Dark-desaturated-blue: hsl(244, 38%, 16%); /*(card background)*/
@@ -26,14 +25,16 @@ body{
     color: var(--Slightly-transparent-white);
     text-align: center;
     font-family: 'Inter', sans-serif;
+    padding-top: 20px;
 }
 
 .card{
     background: var(--Dark-desaturated-blue);
     min-width: 320px;
+    max-width: 500px;
     width: 90%;
-    max-height: 750px;
-    margin: 10% auto 20px;
+    height: 750px;
+    margin: 0 auto 20px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -44,7 +45,7 @@ body{
     height: 33%;
     min-height: 250px;
     
-}
+}    
 
 .container-img .effect{
     background: var(--Soft-violet);
@@ -98,6 +99,10 @@ h1{
 }
 
 @media screen and (min-width:1000px){
+    body{
+        padding-top: 200px;
+    }
+
     .card{
         width: 1000px;
         height: 380px;
@@ -105,19 +110,23 @@ h1{
         flex-direction: row-reverse;
         font-size: 1.2em;
         text-align: left;
+        max-width: none;
     }
+
     .container-img{
         background: url(images/image-header-desktop.jpg);
         background-size: 100% 100%;
         width: 50%;
         height: 100%;
     }
+
     .container-card{
         width: 50%;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
     }
+    
     .container-card__2{
         margin-top: 20px;
         display: flex;
@@ -126,5 +135,17 @@ h1{
     } 
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    opacity: 0.3;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover{ 
+    color: var(--Soft-violet);
+}
+.attribution:hover{
+    opacity: .9;
+}
