@@ -101,11 +101,12 @@ h1{
 @media screen and (min-width:1000px){
     body{
         padding-top: 200px;
+        font-size: 18px;
     }
 
     .card{
         width: 1000px;
-        height: 380px;
+        height: 500px;
         display: flex;
         flex-direction: row-reverse;
         font-size: 1.2em;
