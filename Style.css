@@ -31,7 +31,7 @@ body{
 .card{
     background: var(--Dark-desaturated-blue);
     min-width: 320px;
-    max-width: 500px;
+    max-width: 400px;
     width: 90%;
     height: 750px;
     margin: 0 auto 20px;
@@ -106,7 +106,7 @@ h1{
 
     .card{
         width: 1000px;
-        height: 500px;
+        height: 450px;
         display: flex;
         flex-direction: row-reverse;
         font-size: 1.2em;
@@ -140,13 +140,17 @@ h1{
     font-size: 11px;
     text-align: center;
     opacity: 0.3;
+    display: inline-block;
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
 .attribution a:hover{ 
     color: var(--Soft-violet);
 }
+
 .attribution:hover{
     opacity: .9;
 }
